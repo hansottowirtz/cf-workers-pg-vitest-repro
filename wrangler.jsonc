@@ -1,0 +1,16 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "worker-pg-vitest-repro",
+  "compatibility_date": "2026-03-17",
+  "main": "./src/index.ts",
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+  "hyperdrive": [
+    {
+      "binding": "HYPERDRIVE",
+      "id": "00000000000000000000000000000000",
+      "localConnectionString": "postgres://test:test@127.0.0.1:5432/test"
+    }
+  ]
+}
